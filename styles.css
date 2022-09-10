@@ -47,9 +47,32 @@
 /* Top 
     Bold text
     Display grid
-    Flow column */
+    Flow column
+    Shadow at bottom
+    White background */
 
-/* top>top
+/* Top>top
     Display grid
     Flow row
     1fr 15fr 5fr 2fr 5fr columns */
+
+/* Searchbar
+    Gray background
+    Sizing */
+
+/* Top>bottom
+    Display grid
+    Flow row
+    1 row; 1fr 5fr 1fr 1fr 1fr column */
+
+/* Top>bottom>greeting
+    Display grid
+    Flow column
+    Lean left */
+
+/* Top>bottom>button
+    Rounded edge
+    White text
+    Bold
+    Blue background
+    Sizing */
