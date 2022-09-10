@@ -5,6 +5,9 @@
     Font family
     Black font */
 
+/* Icons
+    Small size */
+
 /* Main left section */
 
 /* Main left 
@@ -12,7 +15,9 @@
     Bold
     Large size 
     Blue background color
-    Leans upwards vertically */
+    Leans upwards vertically
+    Display grid
+    Flow column */
 
 /* Dashboard, Categories, Extras
     Display grid
@@ -33,3 +38,18 @@
     Display grid
     Grid flow column */
 
+/* Main Right Section */
+
+/* Main right
+    Display grid
+    Flow column */
+
+/* Top 
+    Bold text
+    Display grid
+    Flow column */
+
+/* top>top
+    Display grid
+    Flow row
+    1fr 15fr 5fr 2fr 5fr columns */
