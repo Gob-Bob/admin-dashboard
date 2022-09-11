@@ -1,9 +1,8 @@
-* {
-    
-} body {
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: grid;
     grid-auto-flow: column;
+    margin: 0px;
 } img {
     height: 22px;
     width: auto;
@@ -23,15 +22,8 @@
     font-size: 20px;
     font-weight: 550;
     display: grid;
+    grid-template-rows: 50px;
 }
-
-/* Dashboard, Categories, Extras
-    Display grid
-    2 columns
-    2nd column is 5x bigger than 1st
-    Content leans to the left
-    Centered vertically
-    Grid flow row */
 
 .dashboard,
 .categories,
@@ -39,20 +31,35 @@
     display: grid;
     grid-auto-flow: column;
 }
+.dashboard>img {
+    width: 50px;
+    height: auto;
+}
+.dashboard>.text {
+    font-size: 30px;
+    justify-self: start;
+}
 
-/* Dashboard
-    Bigger size font */
+.dashboard {
+    height: 50px;
+}
+
+.categories {
+    height: 300px;
+}
 
 .categories>.texts,
 .extras>.texts {
     display: grid;
+    justify-content: center;
 }
 
 .categories>.icons,
 .extras>.icons {
     display: grid;
-    width: 20px;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
 }
 
 /* Main Right Section */
