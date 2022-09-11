@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     margin: 0px;
+    grid-template-columns: 300px;
 } img {
     height: 22px;
     width: auto;
@@ -21,45 +22,54 @@ body {
     color: white;
     font-size: 20px;
     font-weight: 550;
-    display: grid;
-    grid-template-rows: 50px;
-}
-
-.dashboard,
-.categories,
-.extras {
-    display: grid;
-    grid-auto-flow: column;
-}
-.dashboard>img {
-    width: 50px;
-    height: auto;
-}
-.dashboard>.text {
-    font-size: 30px;
-    justify-self: start;
 }
 
 .dashboard {
-    height: 50px;
-}
-
-.categories {
-    height: 300px;
-}
-
-.categories>.texts,
-.extras>.texts {
     display: grid;
-    justify-content: center;
-}
-
-.categories>.icons,
-.extras>.icons {
-    display: grid;
+    grid-auto-flow: column;
     justify-content: center;
     align-items: center;
+    
+    gap: 10px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+} .dashboard>img {
     width: 50px;
+    height: auto;
+} .dashboard>.text {
+    font-size: 30px;
+}
+
+.categories,
+.extras {
+    display: grid
+} .categories>div,
+.extras>div {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    height: 30px;
+    
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+
+    box-shadow: inset 0 0 0 0 #2563eb;
+    transition: ease-out 0.3s;
+} .categories>div>.text,
+.extras>div>.text {
+    font-size: 24px;
+    transition: ease-out 0.3s;
+} .categories {
+    padding-bottom: 50px;
+} .categories>div:hover,
+.extras>div:hover {
+    box-shadow: inset 300px 0 0 0 #2563eb;
+    cursor: pointer;
+    font-size: 28px;
 }
 
 /* Main Right Section */
