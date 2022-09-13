@@ -69,7 +69,6 @@ body {
 .extras>div:hover {
     box-shadow: inset 300px 0 0 0 #2563eb;
     cursor: pointer;
-    font-size: 28px;
 }
 
 /* Main Right Section */
@@ -83,39 +82,53 @@ body {
 .main-right__top {
     display: grid;
     box-shadow: var(--shadow-right-section);
-}
-.main-right__top>.top,
+} .main-right__top>.top,
 .main-right__top>.bottom {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
-}
-.main-right__top>.top {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto auto; 
-    padding-top: 20px;
+    grid-template-columns: auto 1fr auto auto auto;
     gap: 20px;
-}
-.top>.profile-pic {
+} .main-right__top>.top {
+    padding-top: 20px;
+} .top>.profile-pic {
     width: 40px;
     height: auto;
-}
-.top>.name {
+} .top>.name {
     font-size: 20px;
     font-weight: bold;
-}
-input {
+} input {
     border-radius: 15px;
     border: 0;
     background-color: rgb(240, 240, 255);
     padding: 6px;
     font-size: 15px;
     margin-right: 50px;
-}
-input:focus {
+} input:focus {
     outline: none;
+}
+
+.main-right__top>.bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+} .bottom>.profile-pic {
+    width: 55px;
+    height: auto;
+} .greeting {
+    font-weight: bold;
+} .greeting>.name-handle {
+    font-size: 22px;
+} button {
+    background-color: #3b82f6;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 25px 8px 25px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Right main bottom section */
