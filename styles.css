@@ -12,7 +12,7 @@ body {
 /* Variable properties */
 
 :root {
-    --shadow-right-section: 1px 1px 1px 1px;
+    --shadow-right-section: 1px 1px 10px 1px Gray;
 }
 
 /* Main left section */
@@ -74,44 +74,49 @@ body {
 
 /* Main Right Section */
 
-/* Main right
-    Display grid
-    Flow column */
+.main-right {
+    display: grid;
+}
 
 /* Main right section top */
 
-/* Top 
-    Bold text
-    Display grid
-    Flow column
-    Variable shadow
-    White background */
-
-/* Top>top
-    Display grid
-    Flow row
-    1fr 15fr 5fr 2fr 5fr columns */
-
-/* Searchbar
-    Gray background
-    Sizing */
-
-/* Top>bottom
-    Display grid
-    Flow row
-    1 row; 1fr 5fr 1fr 1fr 1fr column */
-
-/* Top>bottom>greeting
-    Display grid
-    Flow column
-    Lean left */
-
-/* Top>bottom>button
-    Rounded edge
-    White text
-    Bold
-    Blue background
-    Sizing */
+.main-right__top {
+    display: grid;
+    box-shadow: var(--shadow-right-section);
+}
+.main-right__top>.top,
+.main-right__top>.bottom {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.main-right__top>.top {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto; 
+    padding-top: 20px;
+    gap: 20px;
+}
+.top>.profile-pic {
+    width: 40px;
+    height: auto;
+}
+.top>.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+input {
+    border-radius: 15px;
+    border: 0;
+    background-color: rgb(240, 240, 255);
+    padding: 6px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+input:focus {
+    outline: none;
+}
 
 /* Right main bottom section */
 
