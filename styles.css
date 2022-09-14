@@ -4,6 +4,7 @@ body {
     grid-auto-flow: column;
     margin: 0px;
     grid-template-columns: 300px;
+    height: 100vh;
 } img {
     height: 22px;
     width: auto;
@@ -133,96 +134,31 @@ body {
 
 /* Right main bottom section */
 
-/* Right main
-    Display grid
-    Gray background
-    Columns 3fr 1fr
-    Rows 1fr 4fr 1fr 4fr
-    Grid:
-        "projects_header announcements_header"
-        "projects announcement"
-        "projects trending_header"
-        "projects trending" */
+/* Projects */
 
-/* Right main section titles */
-
-/* Projects>title, Sidebar>announcement-title , Sidebar>trending-title
-    Sizing
-    Bold 
-    Lean left*/
-
-/* Projects>title
-    Grid area projects_header */
-
-/* Sidebar>announcement-title
-    Grid area announcement_header */
-
-/* Sidebar>trending-title
-    Grid area trending_header */
-
-/* Right main section body */
-
-/* Project, announcements, trending
-    White background
-    Variable shadow 
-    Round edges */
-
-/* Project-wrapper
-    Display grid
-    Grid area projects
-    3 rows 2 columns */
-
-/* Project
-    Flow column
-    Orange left border */
-
-/* Project>header, p
-    Lean left */
-
-/* Project>header
-    Bold
-    Sizing */
-
-/* Project>p
-    Font color
-    Size */
-
-/* Project>footer
-    Lean right
-    Display grid
-    Flow row
-    Sizing */
-
-/* Sidebar section */
-
-/* Announcements section */
-
-/* Sidebar>announcements
-    Grid area announcement
-    Display grid
-    Flow column */
-
-/* announcements>header
-    Bold
-    Sizing
-    Lean left */
-
-/* announcements>p
-    Gray font
-    Sizing
-    Lean left */
-
-/* Trending section */
-
-/* Trending
-    Display grid
-    Grid area trending
-    Flow columm */
-
-/* Trending>div
-    Display grid
-    Flow row */
-
-/* Trending>div>text
-    Gray font
-    Lean left */
+.main-right__bottom {
+    display: grid;
+    grid-template-areas: 
+        "projects-header announcements-header"
+        "projects announcements"
+        "projects trending-header"
+        "projects trending";
+}
+.projects-header {
+    grid-area: projects-header;
+}
+.announcements-header {
+    grid-area: announcements-header;
+}
+.projects {
+    grid-area: projects;
+}
+.announcements {
+    grid-area: announcements;
+}
+.trending-header {
+    grid-area: trending-header;
+}
+.trending {
+    grid-area: trending;
+}
