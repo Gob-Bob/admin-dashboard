@@ -13,7 +13,7 @@ body {
 /* Variable properties */
 
 :root {
-    --shadow-right-section: 1px 1px 10px 1px Gray;
+    --shadow-right-section: 0px 5px 10px -2px lightgray;
 }
 
 /* Main left section */
@@ -83,6 +83,7 @@ body {
 .main-right__top {
     display: grid;
     box-shadow: var(--shadow-right-section);
+    z-index: 1;
 } .main-right__top>.top,
 .main-right__top>.bottom {
     display: grid;
@@ -134,8 +135,6 @@ body {
 
 /* Right main bottom section */
 
-/* Projects */
-
 .main-right__bottom {
     display: grid;
     grid-template-areas: 
@@ -143,15 +142,20 @@ body {
         "projects announcements"
         "projects trending-header"
         "projects trending";
+    background-color: rgb(240, 240, 255);
 }
 .projects-header {
     grid-area: projects-header;
+    font-size: 22px;
+    font-weight: 550;
 }
 .announcements-header {
     grid-area: announcements-header;
 }
 .projects {
     grid-area: projects;
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
 }
 .announcements {
     grid-area: announcements;
