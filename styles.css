@@ -147,15 +147,39 @@ body {
 .projects-header {
     grid-area: projects-header;
     font-size: 22px;
-    font-weight: 550;
-}
-.announcements-header {
-    grid-area: announcements-header;
+    font-weight: 650;
+    padding: 30px 25px 0px 25px;
 }
 .projects {
     grid-area: projects;
     display: grid;
     grid: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 25px;
+    padding: 10px 25px 50px 25px;
+}
+.project {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    border-left: 8px solid orange;
+    display: grid;
+}
+.project>header {
+    font-size: 20px;
+    font-weight: 550;
+}
+.project>p {
+    color: rgb(129, 129, 129);
+}
+.project>footer {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    cursor: pointer;
+}
+.announcements-header {
+    grid-area: announcements-header;
 }
 .announcements {
     grid-area: announcements;
