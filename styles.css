@@ -13,7 +13,7 @@ body {
 /* Variable properties */
 
 :root {
-    --shadow-right-section: 0px 5px 10px -2px lightgray;
+    --shadow-right-section: 5px 5px 5px -2px lightgray;
 }
 
 /* Main left section */
@@ -163,6 +163,7 @@ body {
     padding: 30px;
     border-left: 8px solid orange;
     display: grid;
+    box-shadow: var(--shadow-right-section);
 }
 .project>header {
     font-size: 20px;
@@ -180,9 +181,33 @@ body {
 }
 .announcements-header {
     grid-area: announcements-header;
+    font-size: 22px;
+    font-weight: 650;
+    margin-top: 35px;
 }
 .announcements {
     grid-area: announcements;
+    background-color: white;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: var(--shadow-right-section);
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+.announcements>div>header {
+    font-weight: 550;
+}
+.announcements>div>p {
+    color: rgb(129, 129, 129);
+    font-size: 14px;
+}
+.community-share-day {
+    border-top: 2px solid rgb(240, 240, 255);
+    border-bottom: 2px solid rgb(240, 240, 255);
+}
+.announcements>div {
+    padding: 20px;
 }
 .trending-header {
     grid-area: trending-header;
