@@ -154,7 +154,7 @@ body {
 .projects {
     grid-area: projects;
     display: grid;
-    grid: repeat(3, 1fr) / repeat(2, 1fr);
+    grid: repeat(3, 1fr) / repeat(auto-fit, minmax(400px, 1fr));
     gap: 25px;
     padding: 10px 25px 50px 25px;
 }
@@ -165,6 +165,7 @@ body {
     border-left: 8px solid orange;
     display: grid;
     box-shadow: var(--shadow-right-section);
+
 }
 .project>header {
     font-size: 20px;
